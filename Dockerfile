@@ -19,4 +19,5 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* 
 RUN usermod -aG docker jenkins 
+RUN usermod -aG kobkrit jenkins
 USER jenkins
